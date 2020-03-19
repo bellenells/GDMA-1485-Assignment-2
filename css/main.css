@@ -50,7 +50,7 @@
 	font-family: 'EB Garamond', serif;
 }
 
-row {
+.row {
 	overflow: auto;
 }
 
@@ -84,7 +84,9 @@ li {
 	padding: 100px;
 }
 
-
+a {
+	text-decoration: none;
+}
 
 nav:first-child li a {
 	margin-left: 30px;
@@ -155,7 +157,6 @@ header p span {
 	font-family: 'EB Garamond', serif;
 	font-size: 30px;
 	font-style: italic;
-	font-weight: 700px;
 	text-transform: lowercase;
 }
 
@@ -221,11 +222,10 @@ h1 {
 	font-style: bold;
 }
 
-h1, wrapper:first-child header:first-child p {
+h1, header p {
 	text-align: center;
 }
 
-wrapper:nth-child(2) 
 
 a {
 	text-decoration: none;
@@ -266,7 +266,7 @@ span:first-of-type {
 	background: url("../img/twitter-sprite.png") no-repeat 0 0;
 }
 
-bg-blue li a:hover {
+.bg-blue li a:hover {
 	background-position: 0 -20px;
 }
 
@@ -276,18 +276,20 @@ bg-blue li a:hover {
    background-image: url("../img/take-action.jpg");
    background-repeat: no-repeat;
    background-size: cover; 
+   background-position: 0 -200px
 }
+
 
 #bg-about {
    background-color: #cccccc;
-   background-image: url("../img/about.jpg");
+   background-image: url("../img/about.jpeg");
    background-repeat: no-repeat;
    background-size: cover; 
+   background-position: 0 -200px;
 }
 
- .col:first-child, #left {
+ .col:first-child, #left, header:nth-child(3) ul:first-child {
 	float: left;
-	
 }
 
 .col:first-child {
@@ -312,9 +314,13 @@ bg-blue li a:hover {
 	color: #000;
 }
 
-.col:last-child, #right {
+.col:last-child, #right, header:nth-child(3) ul:last-child {
 	float: right;
 	width: 500px;
+}
+
+header:nth-child(3) ul {
+	width: 300px;
 }
 
 #bg-blue {
@@ -322,5 +328,18 @@ bg-blue li a:hover {
 }
 
 footer {
-	height: 55px;
+	margin-top: 55px;
+}
+
+section .col {
+	width: 300px;
+	font-style: normal;
+}
+
+section .col h2 {
+	width: 230px;
+}
+
+.wrapper:nth-child(2) p:first-of-type {
+	font-size: 35px;
 }
