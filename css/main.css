@@ -132,15 +132,15 @@ nav:last-child a {
 	float: left;
 }
 
+#logo, .form-col:first-child, .col-4-4:first-child, .col-4-4:nth-child(2) {
+	float: left;
+}
+
 .form-col {
 	width: 250px;
 }
 
-.form-col:first-child {
-	float: left;
-}
-
-.form-col:last-child {
+.form-col:last-child, .wrapper:first-child nav, .col-4-4:last-child {
 	float: right;
 }
 
@@ -151,7 +151,6 @@ select {
           
 .wrapper:first-child nav {
 	width: 350px;
-	float: right;
 }
 
 .col-2-2 nav {
@@ -179,20 +178,12 @@ ul {
 	margin-top: 50px;
 }
 
-.col-4-4:first-child, .col-4-4:nth-child(2) {
-	float: left;
-}
-
 .col-4-4 .btn {
 	width: 100px;
 }
 
 .col-4-4:first-child .btn, .col-4-4:nth-child(2) .btn {
 	margin-left: 100px;
-}
-
-.col-4-4:last-child {
-	float: right;
 }
 
 .col-4-4:first-child {
@@ -490,7 +481,7 @@ h2 {
 	margin: 0 0 0 150px;
 }
 
-#info, #info2 {
+#info, #threaten {
 	width: 700px;
 	margin: 75px 200px;
 	text-align: center;
